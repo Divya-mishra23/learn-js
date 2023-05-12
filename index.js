@@ -9,7 +9,28 @@ let mylovelystringe = 'he is a good boy';
 console.log((mylovelystringe.length));
 d = mylovelystringe.replace('he','harry');
 console.log(d, mylovelystringe);
-let mydate = Date.now()
-console.log(mydate.getTime());
-console.log(mydate.getfullyear());
-console.log(mydate.getday());
+function clicked(){
+    console.log('button was clicked');
+}
+window.onload = function(){
+    console.log('the document was loaded');
+}
+firstContainer.addEventListener('click', function(){
+console.log("clicked on container");
+})
+firstContainer.addEventListener('mouseover', function(){
+    console.log("mouse on container");
+    })
+    sum = (a,b)=>{
+        return a+b
+    }
+log = ()=>{
+    console.log('log in');
+}
+setTimeout(log, 2000);
+obj = {name:"divya", length:1,a:{this: 'tha"t'}}
+jso = JSON.stringify(obj);
+console.log(typeof jso);
+console.log(jso);
+parsed = JSON.parse('{"name":"divya","length":1,"a":{"this":"that"}}')
+console.log(parsed);
